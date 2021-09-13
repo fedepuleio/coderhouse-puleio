@@ -4,7 +4,21 @@
 
 
 @media only screen and (min-width: 768px) {       
+//   OPERACIONES  //
 
+@each $fondo in servicios,clientes,contacto,books {
+    .fondo__#{$fondo} {
+        background-image: url("../imagenes/banners/#{$fondo}.jpg");
+        background-size: cover;
+        width: 100vw;
+        min-height: 15rem;
+        max-height: 25rem;
+        margin-right: 3rem;
+        
+    }
+}
+
+// FIN OPERACIONES //
 
 //              HEADER      //
 
@@ -12,6 +26,7 @@
 header {
     nav {
         .logo {
+            justify-content: flex-start;
             img {
                 max-width: 18rem;
             }
@@ -29,7 +44,7 @@ header {
 
 
 // MAIN // 
-
+// INICIO MAIN INDEX // 
 .main__index {
     display: flex;
     justify-content: center;
@@ -43,6 +58,13 @@ header {
     border-bottom: 5px solid rgba(0, 0, 0, 0.63);
     border-radius: 50%;
     }
+
+// FIN MAIN INDEX //
+
+//INICIO MAIN SERVICIOS //
+.fondo__#{$fondo}  {
+    padding: 4rem 1rem;
+}
 // FIN MAIN //
 
 
@@ -111,7 +133,7 @@ section {
     padding: auto;
     max-width: 95vw;
     }
-.contenedor__ejemplos { 
+.contenedor__grilla { 
     display: flex;
     justify-content: center;
     margin-top: 15vh;
@@ -134,6 +156,8 @@ section {
     .card {
         display: flex;
         padding: 2rem;
+        min-width: 16rem;
+        max-width: 20rem;
     }
 }
 

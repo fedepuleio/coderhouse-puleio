@@ -5,19 +5,6 @@
 @import "footer" ; 
 @import "queries"; 
 
-//   OPERACIONES  //
-
-@each $fondo in servicios,clientes,contacto,books {
-    .fondo__#{$fondo} {
-        background-image: url("../imagenes/banners/#{$fondo}.jpg");
-        background-size: cover;
-        width: 100vw;
-        height: 125px;
-        
-    }
-}
-// FIN OPERACIONES //
-
 //        NORMALIZACION HTML             //
 
 
@@ -79,25 +66,36 @@ main > div.contenedor__carousel {
 /*  TITULO Y SUBTITULO */
 
 
-$color__texto__banners: white;
-$color_fondo_texto_banners:  rgba(0, 0, 0, 0.212); 
+$color__texto__banners: black ;
+$color_fondo_texto_banners: rgba(158, 155, 155, 0.096); 
 
 .titulo{
     color: $color__texto__banners;
     background-color: $color_fondo_texto_banners;
     font-weight: normal;
     font-size: 3rem;
-    margin-top: 5%;
-    padding: 1rem 1rem;
+    width: auto;
+    margin: 3rem;
     text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0.8rem 0.8rem rgba(43, 42, 42, 0.774);
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
 }
 .subtitulo{
     color: $color__texto__banners;
     background-color:  $color_fondo_texto_banners;
     font-weight: normal;
     width: 100vw;
+    margin: 0 auto;
     font-size: 1.3rem;
     text-align: center;
+    border-radius: 2rem;
+    box-shadow: 0.8rem 0.8rem rgba(43, 42, 42, 0.774)
 }
 // FIN TITULO Y SUBTITULO //
 
