@@ -126,10 +126,15 @@ section {
 
 // CARDS CLIENTES.HTML //
 
-.contenedor__tarjetas { 
+.tarjetas { 
     display: flex;
     justify-content: space-evenly;
-    margin: 5vw;
+    margin: 3rem;
+    height: 30rem;
+    .card {
+        display: flex;
+        padding: 2rem;
+    }
 }
 
 }  //   FIN QUERY TABLETS  //

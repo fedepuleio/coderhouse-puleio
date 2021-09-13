@@ -9,7 +9,7 @@
 
 @each $fondo in servicios,clientes,contacto,books {
     .fondo__#{$fondo} {
-        background-image: url("/imagenes/banners/#{$fondo}.jpg");
+        background-image: url("../imagenes/banners/#{$fondo}.jpg");
         background-size: cover;
         width: 100vw;
         height: 125px;
@@ -151,6 +151,7 @@ section {
 
 .centrado {
         display: flex;
+        align-items: center;
         justify-content: center;
         padding-top: 10%;
 }
@@ -179,31 +180,19 @@ section {
 
 
 
-//         CLIENTES.HTML         //
+//  Inicio    CLIENTES.HTML         //
 
 
-.grid__clientes {
-            display: grid;
-            grid-template-columns: repeat(10,1fr);
-            grid-template-rows: repeat(10,1fr);
-            justify-content: center;
-            padding-top: 10%;
-}
-.grid__items { 
-    display: flex;
-    justify-content: center;
-    border: 8px solid rgb(0, 0, 0);
-    padding: 5px;
-    min-width: 1fr ;
-    min-height: 1fr;
-    gap: 2px;
+// TARJETAS  //
+
+.tarjetas { 
+    width: 50%;
+    margin: 1rem auto;
+    .card , .card-body {
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+    }
 }
 
-// TARJETAS CLIENTES.HTML //
-
-.contenedor__tarjetas { 
-    align-items: center;
-    justify-content: center;
-    margin: 3vh;
-    transform: translate(15px);
-}
+//  Fin    CLIENTES.HTML         //

@@ -291,40 +291,47 @@ footer .pie ol {
   .contenedor__carousel {
     width: 95vh;
   }
-  .contenedor__tarjetas {
+  .tarjetas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 5vw;
+    margin: 3rem;
+    height: 30rem;
+  }
+  .tarjetas .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
   }
 }
 
 .fondo__servicios {
-  background-image: url("/imagenes/banners/servicios.jpg");
+  background-image: url("../imagenes/banners/servicios.jpg");
   background-size: cover;
   width: 100vw;
   height: 125px;
 }
 
 .fondo__clientes {
-  background-image: url("/imagenes/banners/clientes.jpg");
+  background-image: url("../imagenes/banners/clientes.jpg");
   background-size: cover;
   width: 100vw;
   height: 125px;
 }
 
 .fondo__contacto {
-  background-image: url("/imagenes/banners/contacto.jpg");
+  background-image: url("../imagenes/banners/contacto.jpg");
   background-size: cover;
   width: 100vw;
   height: 125px;
 }
 
 .fondo__books {
-  background-image: url("/imagenes/banners/books.jpg");
+  background-image: url("../imagenes/banners/books.jpg");
   background-size: cover;
   width: 100vw;
   height: 125px;
@@ -438,6 +445,9 @@ section h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -465,42 +475,16 @@ section h3 {
   font-style: italic;
 }
 
-.grid__clientes {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[10];
-      grid-template-rows: repeat(10, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 10%;
+.tarjetas {
+  width: 50%;
+  margin: 1rem auto;
 }
 
-.grid__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.tarjetas .card, .tarjetas .card-body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 8px solid black;
-  padding: 5px;
-  min-width: 1fr;
-  min-height: 1fr;
-  gap: 2px;
-}
-
-.contenedor__tarjetas {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 3vh;
-  -webkit-transform: translate(15px);
-          transform: translate(15px);
+  padding: 1rem;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
