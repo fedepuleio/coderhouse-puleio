@@ -1,0 +1,100 @@
+//      Variables       //
+$gradiente: linear-gradient(to right, rgb(197, 197, 197),white);
+
+
+
+//            MIXINS       // 
+
+@mixin header {
+    background-image: $gradiente;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+//       FIN MIXINS         // 
+
+
+
+header { 
+    @include header;
+    .logo {
+        img {
+            width: 100px;
+            height: auto;
+            align-self: center;
+            transform: translate(15px);
+            padding: 10px;
+        }
+    }
+}
+
+.menu__principal {
+        display: flex;
+        flex-wrap: nowrap;
+        a:hover {
+                background:  rgba(129, 129, 126, 0.616);
+                color: white;      
+            }
+        }
+    ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;            
+        a {
+            color: black;
+            font-size: 9px;
+            padding: 1px 15px;
+            display: inline;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            text-decoration: none;
+            }
+        }
+
+.nav {
+    justify-content: flex-end;
+    .nav-link {
+        color: black;
+        padding: 4px 4px;
+        
+    }
+}
+    
+
+
+
+//  SUB MENU  //
+
+
+.menu__principal  {
+    .sub__menu {
+        list-style: none;
+        position: absolute;
+        top: 100px;
+        right:30px;
+    }
+}
+/* ul {
+    .sub__menu{
+        display: none;
+        }
+    ul {
+        li {
+            display: none;
+            }
+        }
+    }
+ */
+
+//   FALTA MEJORAR EL FUNCIONAMIENTO  //
+
+li:hover {                           
+        .sub__menu {
+            display: block;
+            }
+        }

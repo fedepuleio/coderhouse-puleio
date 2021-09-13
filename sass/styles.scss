@@ -1,0 +1,197 @@
+// IMPORTACIONES ARCHIVOS SCSS y SASS //
+
+
+@import "header" ; 
+@import "footer" ; 
+@import "queries"; 
+
+//   OPERACIONES  //
+
+@each $fondo in servicios,clientes,contacto,books {
+    .fondo__#{$fondo} {
+        background-image: url("/imagenes/banners/#{$fondo}.jpg");
+        background-size: cover;
+        width: 100vw;
+        height: 125px;
+        
+    }
+}
+// FIN OPERACIONES //
+
+//        NORMALIZACION HTML             //
+
+
+* { 
+    margin: 0;
+	padding: 0;
+    padding-left: 0;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+//             BODY            //
+
+body { 
+    background-color: rgba(253, 253, 253, 0.883);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+//    MAIN INDEX.HTML - CAROUSEL -          //
+
+
+.main__index {
+    margin-top: 8vh;
+}
+
+
+
+//      BANNER INDEX.HTML        //
+.banner {
+    color: white;
+    background-image: url(/imagenes/fondo.jpg);
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bolder ;
+    min-height: 120px;
+    padding-top: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+// FIN BANNER INDEX.HTML // 
+
+
+
+
+/*  TITULO Y SUBTITULO */
+
+
+$color__texto__banners: white;
+$color_fondo_texto_banners:  rgba(0, 0, 0, 0.212); 
+
+.titulo{
+    color: $color__texto__banners;
+    background-color: $color_fondo_texto_banners;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 5%;
+    padding: 10px 10px;
+    text-align: center;
+}
+.subtitulo{
+    color: $color__texto__banners;
+    background-color:  $color_fondo_texto_banners;
+    font-weight: normal;
+    width: 100vw;
+    font-size: 13px;
+    text-align: center;
+}
+// FIN TITULO Y SUBTITULO //
+
+
+
+
+// SECTION MAPA //
+
+section {
+    .mapa {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        
+    }
+    div {
+        iframe {
+                margin: 50px;
+                padding: 10px;
+                width: 250px ;
+                height: 250px;
+            }
+        } 
+    h3 {
+        padding-top: 20px;
+        margin: 23px;
+        letter-spacing: 20px;
+        text-align: center;
+        }
+}
+
+// FIN SECTION MAPA //
+
+//  CONTENEDOR //
+
+.contenedor {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+// CENTRADO //
+
+.centrado {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+}
+
+
+//        GRIDS SERVICIOS,BRANDING,BOOKS Y REDES    // 
+
+.contenedor__grilla {
+                padding: 3vh;
+                .ejemplo {
+                        text-align: center;
+                        img { 
+                            width: 100%;
+                            padding: 5%;
+                        }
+                        h4 {
+                            padding-top: 2vh;
+                        }
+                    }
+                }
+
+.cursiva { 
+        font-style: italic;
+}
+// FIN GRIDS // 
+
+
+
+//         CLIENTES.HTML         //
+
+
+.grid__clientes {
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(10,1fr);
+            justify-content: center;
+            padding-top: 10%;
+}
+.grid__items { 
+    display: flex;
+    justify-content: center;
+    border: 8px solid rgb(0, 0, 0);
+    padding: 5px;
+    min-width: 1fr ;
+    min-height: 1fr;
+    gap: 2px;
+}
+
+// TARJETAS CLIENTES.HTML //
+
+.contenedor__tarjetas { 
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+    transform: translate(15px);
+}

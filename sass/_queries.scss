@@ -1,0 +1,147 @@
+
+
+//    INICIO QUERY TABLETS     //
+
+
+@media only screen and (min-width: 768px) {       
+
+
+//              HEADER      //
+
+
+header {
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 80px;
+    .menu__principal {
+            a  {
+                margin-right: auto;
+                font-size: 12px;
+                }
+            }      
+            .logo { 
+                    img {
+                        width: 120px;
+                        height: auto;
+                        margin-left: 45px;
+                        margin-right: 30px;
+                        transform: translate(25px);
+                    }
+            }            
+        }
+
+.nav {
+        justify-content: flex-end;
+        .nav-item {
+            padding: 5px 5px 5px 5px;
+        }
+}
+
+// FIN HEADER //
+
+
+// MAIN // 
+
+.main__index {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    }
+    
+.banner {
+    min-height: 500px;
+    width: 100%;
+    border-right: 5px solid rgba(0, 0, 0, 0.63);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.63);
+    border-radius: 50%;
+    }
+// FIN MAIN //
+
+
+
+// SECTION INDEX.HTML // 
+#section__mapa {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 5%;
+                margin-left: 30px;
+                flex-direction: row;
+                    h3 {
+                        font-size: 40px;
+                        }
+                }       
+    
+section {
+        div { 
+            iframe {
+                    margin: 95px;
+                    padding: 10px;
+                    width: 500px ;
+                    height: 500px;
+                    }
+                }
+            }
+
+//          CONTACTO.HTML // 
+
+// GRILLA // 
+
+#grilla { 
+    display: grid;
+    grid-template-areas: "1 1 1""2 3 3""4 4 4" ;
+    grid-template-rows: 20% 20% 60%;
+    grid-template-columns: 100%;
+    .header__grilla {
+                    grid-area: 1;
+                }
+    .main__grilla {
+                    grid-area: 2;
+                }
+    .section__grilla {
+                    grid-area: 3;
+                }
+    .footer__grilla  {
+                    grid-area: 4;
+                }
+            }
+// FIN GRILLA //
+
+
+//  BRANDING.HTML // 
+
+
+// GRILLA // 
+
+.grilla__ejemplos {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: auto;
+    max-width: 95vw;
+    }
+.contenedor__ejemplos { 
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+    }
+.foto__chica {
+    max-height: 40vh;
+    }
+.contenedor__carousel {
+    width: 95vh;
+}
+// FIN GRILLA //
+
+// CARDS CLIENTES.HTML //
+
+.contenedor__tarjetas { 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vw;
+}
+
+}  //   FIN QUERY TABLETS  //
