@@ -1,6 +1,6 @@
 //      Variables       //
-$gradiente: linear-gradient(to right, rgb(197, 197, 197),white);
-
+$gradiente: linear-gradient(to right,#ffb700bd ,#ffc0218f,white);
+/* $gradiente: linear-gradient(to right, rgb(197, 197, 197),white); */
 
 
 //            MIXINS       // 
@@ -13,12 +13,13 @@ $gradiente: linear-gradient(to right, rgb(197, 197, 197),white);
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.3rem solid rgba(167, 163, 163, 0.637);
+    border-bottom: 0.3rem solid #ffc021c4;
 }
 
 //       FIN MIXINS         // 
 
 
+//      HEADER      // 
 
 header { 
     @include header;
@@ -39,6 +40,8 @@ header {
         
     }
 
+
+//          NAV         // 
 
 nav {
     flex-grow: 1    ;
@@ -89,80 +92,4 @@ li:hover {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .menu__principal {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        
-    ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-    }            
-        a {
-            color: black;
-            font-size: 9px;
-            padding: 1px 15px;
-            display: block;
-            font-weight: bolder;
-            letter-spacing: 1px;
-            text-decoration: none;
-            }
-        }
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    .nav-link {
-        color: black;
-        padding: 4px 4px;
-    }
-    .nav-link:hover {
-        background:  rgba(129, 129, 126, 0.616);
-        color: white; 
-    }
-} */
-
-//  SUB MENU  //
-
-
-/* .menu__principal  {
-    li {
-        .sub__menu {
-            display: none;
-            position: absolute;
-            top: 20px;
-            right:30px;
-        }
-    }
-}
- */
-
-
-//   FALTA MEJORAR EL FUNCIONAMIENTO  //
-
-/* li:hover {                           
-        .sub__menu {
-            display: block;
-            }
-        }
- */
+//      FIN NAV      // 

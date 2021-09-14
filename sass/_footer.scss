@@ -4,28 +4,35 @@
 
 
 footer {
-    background-color: black;
-    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right,#464444 ,rgb(182, 182, 182));
+    height: 10rem ;
+    max-height: 20rem;
     text-decoration: none;
-}
-
-footer {
-        .pie {
-            ol { 
-                display: flex;
-                padding: 3vw;
-                margin: 10px;
-                list-style: none;
-                color: white;
-                list-style-type: none;
-                justify-content: space-between;
-                
-            }
-        }
-    }
-.pie__de__pagina {
-                li {
-                padding: 15px;
-                font-size: 20px;
+    .pie {
+        width: 100%;
+        height: 100%;
+        .pie__de__pagina { 
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            margin: 1rem;
+            list-style: none;
+            color: white;
+            list-style-type: none;
+            max-height: 100%;
+            li {
+                text-align: center;
+                padding: 1rem;
+                font-size: 1rem;
+                ul>li {
+                    padding: 0;
+                    
                 }
             }
+            
+        }
+    }
+}
+
