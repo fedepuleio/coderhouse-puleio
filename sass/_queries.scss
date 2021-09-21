@@ -34,7 +34,7 @@ header {
             justify-content: flex-start;
             align-items: center;
             img {
-                max-width: 18rem;
+                transform: translate(2rem);
             }
         }
     .menu {
@@ -45,6 +45,9 @@ header {
             }           
         }
     }
+.collapse:not(.show) {
+    justify-content: flex-end;
+}
 
 // FIN HEADER //
 
@@ -52,12 +55,17 @@ header {
 // INDEX //
 
 .contenedor__carousel {
-    width: 95vh;
+    width: 100vw;
+    margin: 0.5rem 0rem;
 }
 
 // FIN INDEX HTML // 
 
-
+//BANNERS TODOS LOS HTML //@at-root
+.titulo {
+    border-radius: 0%;
+    
+}
 
 //  CLIENTES.HTML //
 
@@ -78,12 +86,15 @@ header {
 
 
 //  CONTACTO .HTML // 
+form {
+    width: 60%;
+}
+
 #section__mapa {
-                display: flex;
                 align-items: center;
                 justify-content: space-around;
-                padding-top: 5%;
-                margin-left: 30px;
+                padding-top: 5rem;
+                margin-left: 3rem;
                 flex-direction: row;
                 .mapa { 
                     display: flex;
@@ -181,14 +192,31 @@ header {
     justify-content: center;
     margin-top: 4rem 4rem;
     }
-.foto__chica {
-    max-height: 40vh;
-    }
+
 
 // FIN GRILLA //
+.boton__volver {
+    justify-content: center;
+}
 
 // FIN BRANDING BOOKS REDES HTML //
+
+// footer // 
+
+
 
 
 
 }  //   FIN QUERY TABLETS  //
+
+
+// inicio queries desktop // 
+
+@media only screen and (max-width: 767px) {
+
+// SERVICIOS HTML //
+
+.contenedor_ {
+    display: none;
+}
+}

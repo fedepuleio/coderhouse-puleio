@@ -16,23 +16,28 @@
     <title>Servicios | Estudio Fotográgico</title>
 </head>
 <body>
-    <header>               <!-- inicio header -->
-        <nav> <!-- Inicio NAV BAR --> 
-        <div class="logo"><a href="../index.html"><img src="../imagenes/Logo1.png" alt="logo"></a></div>
-                    <ul class="nav menu"> 
-                    <li><a class="nav-link" href="./servicios.html">Servicios</a>
-                        <ul class="submenu"> <!-- inicio Submenu  -->
-                            <li><a class="nav-link" href="./branding.html">Branding</a></li>
-                            <li><a class="nav-link" href="./books.html">Books</a></li>
-                            <li><a class="nav-link" href="./redes-sociales.html">Redes</a></li>
+        <header>                <!-- inicio header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- Inicio NAV BAR -->
+                <div class="logo"><a href="../index.html"><img src="../imagenes/Logo1.png" alt="logo"></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav menu"> 
+                            <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a>
+                                <ul class="submenu">                <!-- inicio Submenu  -->
+                                    <li><a class="nav-link" href="./branding.html">Branding</a></li>
+                                    <li ><a class="nav-link" href="./books.html">Books</a></li>
+                                    <li><a class="nav-link" href="./redes-sociales.html">Redes</a></li>
+                                </ul>
+                            </li>                                    <!-- Fin Submenu  -->
+                            <li class="nav-item"><a class="nav-link" href="./clientes.html">Clientes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>       
                         </ul>
-                    </li>                                    <!-- Fin Submenu  -->
-                    <li class="nav-item"><a class="nav-link" href="./clientes.html">Clientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>       
-                </ul>
-            </nav>          <!-- Fin nav bar -->
-        </div>
-    </header>    <!-- Fin header -->
+                    </div>
+                </nav>          <!-- Fin nav bar -->
+        </header>    <!-- Fin header -->
+
 
     <main>         <!-- Inicio Main  -->
         <div class="fondo__servicios titulo animate__animated animate__slideInUp">
@@ -58,12 +63,13 @@
                         <img class="animate__animated animate__zoomIn" src="../imagenes/grilla_ejemplos/productos/33.jpg" alt="servicio-redes">
                         <p class="cursiva">Catálogo / Muebles y Decoracíon / Lifestyle.</p>
                         <a href="redes-sociales.html"><button type="button" class="btn btn-secondary btn-sm">Más Info</button></a>
-                        <div class="boton__volver centrado">
-                            <a href="../index.html"><button type="button" class="btn btn-secondary btn-sm">Volver</button></a>
-                        </div> 
+                        
                 </div>
             </div>
             </div>
+            <div class="boton__volver centrado">
+                <a href="../index.html"><button type="button" class="btn btn-secondary btn-sm">Volver</button></a>
+            </div> 
     </main>
 <section class="contenedor_">
     <div class="bloque izquierda">
@@ -76,14 +82,34 @@
     </div>
 </section>
 
-    <footer>
-        <div class="pie">
-            <ol class="pie__de__pagina">
-                <li>Estudio Fotográfico</li>
-                <li>&copy; 2021</li>
-            </ol>
-        </div>
-    </footer>    
+<footer>                 <!-- Comienzo Footer -->
+    <div class="pie">
+        <ol class="pie__de__pagina">
+            <li>NAVEGACION</li>
+                <div class="atajos">
+                    <ul>
+                        <li>NOSOTROS</li>
+                        <li><a class="nav-link" href="./servicios.html">Servicios</a></li>
+                        <li><a class="nav-link" href="./clientes.html">Clientes</a></li>
+                        <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                    <ul>
+                        <li>EXTRAS</li>
+                        <li><a class="nav-link" href="./branding.html">Branding</a></li>
+                        <li><a class="nav-link" href="./books.html">Books</a></li>
+                        <li><a class="nav-link" href="./redes-sociales.html">Redes Sociales</a></li>
+                    </ul>
+                    <ul>
+                        <li>CONTACTO</li>
+                        <li><a class="nav-link" href="https://www.facebook.com">Facebook</a></li>
+                        <li><a class="nav-link" href="https://www.instagram.com">Instagram</a></li>
+                        <li><a class="nav-link" href="https://www.gmail.com">E-mail</a></li>
+                    </ul>
+                </div>
+            <li>Estudio Fotográfico &copy; 2021</li>
+        </ol>
+    </div>
+</footer>   
     
     
     <!-- ENLACES Javascript -->
