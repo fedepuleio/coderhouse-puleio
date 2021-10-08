@@ -1,7 +1,7 @@
 // IMPORTACIONES ARCHIVOS SCSS y SASS //
 
 
-@import "header" ; 
+@import "header" ;
 @import "footer" ; 
 @import "queries"; 
 
@@ -20,7 +20,10 @@
 html {
     font-size: 62.5%; 
 }
-
+ol { 
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+}
 ul {
     padding: 0px;
 }
@@ -176,6 +179,10 @@ p.cursiva {
         justify-content: center;
         padding: 1rem;
         text-align: center;
+        margin: 2rem 1rem;
+    }
+    .card-text {
+        font-size: 1.2rem;
     }
 }
 
@@ -226,3 +233,4 @@ form {
         font-weight: bolder;
     }
 }
+
