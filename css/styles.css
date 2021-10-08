@@ -155,6 +155,11 @@ footer .pie .pie__de__pagina li ul > li {
     max-height: 25rem;
     margin-right: 3rem;
   }
+  header nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   header nav .logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
