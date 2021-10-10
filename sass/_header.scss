@@ -1,5 +1,5 @@
 //      Variables       //
-$gradiente: linear-gradient(to right,#ffb700bd ,#ffc0218f,white);
+$gradiente: linear-gradient(to right,#ffb700bd ,#ffc0219b,white);
 /* $gradiente: linear-gradient(to right, rgb(197, 197, 197),white); */
 
 
@@ -18,19 +18,23 @@ $gradiente: linear-gradient(to right,#ffb700bd ,#ffc0218f,white);
 
 header { 
     @include header;
-    .bg-light,.dropdown-menu {
-        background-image: $gradiente;
-    }
-    .navbar-collapse {
-        justify-content: flex-end;
-    }
-    .logo {
-        width: 60%;
-        max-width: 15rem;
-        height: auto;
-        padding: 1rem;
-                }
+        .bg-light,.dropdown-menu {
+            background-image: $gradiente;
         }
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+        .logo {
+            width: 50%;
+            height: auto;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+        .nav-link {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+}
         
     
 

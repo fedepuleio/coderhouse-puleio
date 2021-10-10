@@ -15,29 +15,24 @@
 		<title>Contacto | Estudio Fotográgico</title>
 </head>
 <body>
-    <header>
+	<header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo1.png" alt="logo" width="100" height="auto" class="d-inline-block align-text-top"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="logo">
+                        <a class="navbar-brand" href="../index.html"><img src="../imagenes/Logo1.png" alt="logo" width="100" height="auto" class="d-inline-block align-text-top"></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./clientes.html">Clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
-                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    
+                                <a class="nav-link dropdown-toggle active" href="./servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Nosotros
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                                    <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="./branding.html">Branding</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="./books.html">Books</a></li>
@@ -45,6 +40,12 @@
                                     <li><a class="dropdown-item" href="./redes-sociales.html">Redes Sociales</a></li>
                                 </ul>
                                 </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./clientes.html">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -103,43 +104,43 @@
 	</div>
 	</section>	<!-- Fin Section -->
 	
-    <section id="section__mapa">      <!-- Comienzo Section + Mapa -->
+    <section id="section__mapa">   <!-- Comienzo Section + Mapa -->
+		<div class="centrado">  
         <h3 class="animate__animated animate__shakeX cartel">Dónde estamos?</h3>
-        <div class="mapa">
+		</div> 
+		<div class="mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.166110808745!2d-58.40503024847976!3d-34.59996086471188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca93b5b057a7%3A0x993ca29bde7edabc!2sSan%20Luis%202541%2C%20C1056%20AAC%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1627686284687!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>  
 
 	<footer>                 <!-- Comienzo Footer -->
-		<div class="pie">
-			<ol class="pie__de__pagina">
-				<li>NAVEGACION</li>
-					<div class="atajos">
-						<ul>
-							<li>NOSOTROS</li>
-							<li><a class="nav-link" href="./servicios.html">Servicios</a></li>
-							<li><a class="nav-link" href="./clientes.html">Clientes</a></li>
-							<li><a class="nav-link" href="./contacto.html">Contacto</a></li>
-						</ul>
-						<ul>
-							<li>EXTRAS</li>
-							<li><a class="nav-link" href="./branding.html">Branding</a></li>
-							<li><a class="nav-link" href="./books.html">Books</a></li>
-							<li><a class="nav-link" href="./redes-sociales.html">Redes Sociales</a></li>
-						</ul>
-						<ul>
-							<li>CONTACTO</li>
-							<li><a class="nav-link" href="https://www.facebook.com">Facebook</a></li>
-							<li><a class="nav-link" href="https://www.instagram.com">Instagram</a></li>
-							<li><a class="nav-link" href="https://www.gmail.com">E-mail</a></li>
-						</ul>
-					</div>
-				<li>Estudio Fotográfico &copy; 2021</li>
-			</ol>
+		<div class="pie__de__pagina">
+			<ul>
+			<h4>NAVEGACION</h4>
+				<div class="atajos">
+					<ul>
+						<li class="negro">NOSOTROS</li>
+						<li><a class="nav-link" href="./servicios.html">Servicios</a></li>
+						<li><a class="nav-link" href="./clientes.html">Clientes</a></li>
+						<li><a class="nav-link" href="./contacto.html">Contacto</a></li>
+					</ul>
+					<ul>
+						<li class="negro">EXTRAS</li>
+						<li><a class="nav-link" href="./branding.html">Branding</a></li>
+						<li><a class="nav-link" href="./books.html">Books</a></li>
+						<li><a class="nav-link" href="./redes-sociales.html">Redes Sociales</a></li>
+					</ul>
+					<ul>
+						<li class="negro">REDES</li>
+						<li><a class="nav-link" href="https://www.facebook.com">Facebook</a></li>
+						<li><a class="nav-link" href="https://www.instagram.com">Instagram</a></li>
+						<li><a class="nav-link" href="https://www.gmail.com">E-mail</a></li>
+					</ul>
+				</div>
+			<h4 class="negro separado">Estudio Fotográfico &copy; 2021</h4>
+		</ul>
 		</div>
-	</div> 
-</footer>   
-
+	</footer>    <!-- Fin Footer -->
 
     <!-- ENLACES Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>

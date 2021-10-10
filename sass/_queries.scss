@@ -16,7 +16,7 @@
         min-height: 15rem;
         max-height: 25rem;
         margin-right: 3rem;
-        
+        padding: 10rem;
     }
 }
 
@@ -25,24 +25,7 @@
 //              HEADER      //
 
 
-header {
-    nav {
-        justify-content: space-between;
-        .logo {
-            justify-content: flex-start;
-            align-items: center;
-            img {
-                transform: translate(2rem);
-            }
-        }
-    .menu {
-            a  {
-                margin-right: auto;
-                font-size: 1.2rem;
-                }
-            }           
-        }
-    }
+
 .collapse:not(.show) {
     justify-content: flex-end;
 }
@@ -66,12 +49,13 @@ header {
 }
 
 //  CLIENTES.HTML //
-
+.sectionTarjetas{ 
+    height: 70vh;
+}
 .tarjetas { 
     display: flex;
     justify-content: space-evenly;
-    margin: 3rem;
-    height: 30rem;
+    margin-top: 10rem;
     .card {
         display: flex;
         padding: 2rem;
@@ -88,28 +72,38 @@ header {
 
 
 //  CONTACTO .HTML // 
+.sobrenos {
+    h4 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
 
 form {
     width: 60%;
+    font-size: 2rem;
 }
 
 #section__mapa {
+                position: relative ;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: center;
                 padding-top: 5rem;
-                margin-left: 3rem;
                 flex-direction: row;
                 .mapa { 
+                    margin-top: 10rem;
                     display: flex;
                     iframe {
-                            margin: 95px;
                             padding: 10px;
-                            width: 500px ;
-                            height: 500px;
+                            width: 50rem;
+                            height: 50rem;
                             }
                         }
-                    h3 {
-                        font-size: 25px;
+                    .cartel {
+                        margin-top: 5rem;
+                        font-size: 2rem;
                         }
                 }       
     
@@ -205,14 +199,11 @@ form {
 // FIN BRANDING BOOKS REDES HTML //
 
 // footer // 
-footer {
-    .pie {
-        .atajos {
-        justify-content: space-around;
-        }
-    }
-}
 
+.atajos {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
@@ -229,6 +220,41 @@ footer {
 .contenedor_ {
     display: none;
 }
+//  Inicio    CLIENTES.HTML         //
 
+
+// TARJETAS  //
+
+.tarjetas { 
+    width: 50%;
+    margin: 1rem auto;
+    .card , .card-body {
+        justify-content: center;
+        padding: 0.2rem;
+        text-align: center;
+        margin: 2rem 1rem;
+    }
+    .card-text {
+        font-size: 1.2rem;
+    }
+}
+
+//  Fin    CLIENTES.HTML         //
 
 } // fin queries mobile //
+
+
+
+// query 992 px 
+@media only screen and (min-width: 992px)  {
+
+header {
+        .logo {
+        width: 85%;
+        height: auto;
+        padding: 1rem;
+        margin-left: 3rem;
+    }
+}
+
+}// fin query
