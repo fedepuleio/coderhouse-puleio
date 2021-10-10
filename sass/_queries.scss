@@ -17,6 +17,7 @@
         max-height: 25rem;
         margin-right: 3rem;
         padding: 10rem;
+        
     }
 }
 
@@ -42,9 +43,15 @@
 
 // FIN INDEX HTML // 
 
-//BANNERS TODOS LOS HTML //@at-root
+//BANNERS TODOS LOS HTML //
 .titulo {
     border-radius: 0%;
+    h1 {
+        font-size: 4.5rem;
+    }
+    p {
+        font-size: 3rem;
+    }
     
 }
 
@@ -240,6 +247,18 @@ form {
 }
 
 //  Fin    CLIENTES.HTML         //
+
+
+.titulo {
+    border-radius: 0%;
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    
+}
 
 } // fin queries mobile //
 
